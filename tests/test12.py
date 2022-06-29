@@ -18,12 +18,12 @@ def test12(driver):
     picture_elem = driver.find_element(By.XPATH, "/html/body/div/main/div[3]/div[1]/div/div[4]/div/div/figure/img")
     try:
         assert picture_elem.is_displayed()
-        with open("OutLog.txt", 'wt') as out_file:
+        with open("OutLog.txt", 'at') as out_file:
             out_file.write(TEST_DESCRIPTION)
             out_file.write(PASSED)
             out_file.write(DELIMITER)
     except AssertionError as e:
-        with open("OutLog.txt", 'wt') as out_file:
+        with open("OutLog.txt", 'at') as out_file:
             out_file.write(TEST_DESCRIPTION)
             out_file.write(FAILED)
             out_file.write(DELIMITER)

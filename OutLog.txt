@@ -1,0 +1,119 @@
+Test #1
+This test case checks first page element.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #2
+This test case checks first page element.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #3
+This test case checks first page elements.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #4
+This test case checks first page element.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #5
+This test case checks first page element.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #6
+This test case checks first page element.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #7
+This test case checks first page element.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #8
+This test case checks first page element.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #9
+This test case checks the down-arrow element in the first page.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #10
+This test case checks first page header 2.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #11
+This test case checks if a picture is displayed.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #12
+This test case checks if a picture which will be visible only by swiping is displayed after swiping.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #13
+This test case checks if an event's title is displayed correctly.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #14
+This test case checks if college paragraph is correctly displayed.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #15
+This test case checks if the title in cooperation is correctly displayed.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #16
+This test case checks if a picture in 'Contact us' section is displayed.
+
+Passed.
+
+-----------------------------------------------------
+
+Test #17
+This test case checks if the correct alert is displayed after entering invalid name.
+
+Passed.
+
+-----------------------------------------------------
+
