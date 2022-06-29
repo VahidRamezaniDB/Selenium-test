@@ -1,3 +1,4 @@
+import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
@@ -11,6 +12,7 @@ driver.maximize_window()
 driver.get("https://www.partsoftware.com/")
 about_us = driver.find_element(By.XPATH, "/html/body/div/nav/div/ul/li[2]/a")
 about_us.click()
+time.sleep(1)
 elem = driver.find_element(By.XPATH, "/html/body/div/main/div[2]/div/div/h2")
 print("******************** "+elem.text+" ****************************")
 driver.close()
