@@ -1,7 +1,7 @@
 Test #1
 This test case checks first page element.
 
-Passed.
+Failed.
 
 -----------------------------------------------------
 
