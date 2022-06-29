@@ -10,7 +10,7 @@ driver = webdriver.Chrome()
 driver.get("https://www.partsoftware.com/")
 elem = driver.find_element(By.XPATH, "/html/body/div/main/section[1]/div[2]/h1")
 try:
-    assert "طــراح" in elem.text
+    assert "طــراح ســـامـانه‌های پـــردازش اطــلاعات مـــالــی" in elem.text
     with open("OutLog.txt", 'wt') as out_file:
         out_file.write(TEST_DESCRIPTION)
         out_file.write(PASSED)
