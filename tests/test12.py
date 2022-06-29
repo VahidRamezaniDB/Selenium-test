@@ -1,12 +1,14 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-def test12(driver):
-    TEST_DESCRIPTION = "Test #12\nThis test case checks if a picture which will be visible only by swiping is displayed after swiping.\n\n"
-    DELIMITER = "-----------------------------------------------------\n\n"
-    PASSED = "Passed.\n\n"
-    FAILED = "Failed.\n\n"
 
+TEST_DESCRIPTION = "Test #12\nThis test case checks if a picture which will be visible only by swiping is displayed after swiping.\n\n"
+DELIMITER = "-----------------------------------------------------\n\n"
+PASSED = "Passed.\n\n"
+FAILED = "Failed.\n\n"
+
+
+def test12(driver):
     products = driver.find_element(By.XPATH, "/html/body/div/nav/div/ul/li[3]/a")
     products.click()
     time.sleep(1)

@@ -1,12 +1,13 @@
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-def test13(driver):
-    TEST_DESCRIPTION = "Test #13\nThis test case checks if an event's title is displayed correctly.\n\n"
-    DELIMITER = "-----------------------------------------------------\n\n"
-    PASSED = "Passed.\n\n"
-    FAILED = "Failed.\n\n"
 
+TEST_DESCRIPTION = "Test #13\nThis test case checks if an event's title is displayed correctly.\n\n"
+DELIMITER = "-----------------------------------------------------\n\n"
+PASSED = "Passed.\n\n"
+FAILED = "Failed.\n\n"
+
+def test13(driver):
     events = driver.find_element(By.XPATH, "/html/body/div/nav/div/ul/li[4]/a")
     events.click()
     time.sleep(1)

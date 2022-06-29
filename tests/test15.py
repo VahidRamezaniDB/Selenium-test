@@ -1,12 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-def test15(driver):
-    TEST_DESCRIPTION = "Test #15\nThis test case checks if the title in cooperation is correctly displayed.\n\n"
-    DELIMITER = "-----------------------------------------------------\n\n"
-    PASSED = "Passed.\n\n"
-    FAILED = "Failed.\n\n"
 
+TEST_DESCRIPTION = "Test #15\nThis test case checks if the title in cooperation is correctly displayed.\n\n"
+DELIMITER = "-----------------------------------------------------\n\n"
+PASSED = "Passed.\n\n"
+FAILED = "Failed.\n\n"
+
+def test15(driver):
     cooperation = driver.find_element(By.XPATH, "/html/body/div/nav/div/ul/li[6]/a")
     cooperation.click()
     time.sleep(1)

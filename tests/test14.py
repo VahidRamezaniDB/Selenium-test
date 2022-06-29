@@ -1,12 +1,13 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-def test14(driver):
-    TEST_DESCRIPTION = "Test #14\nThis test case checks if college paragraph is correctly displayed.\n\n"
-    DELIMITER = "-----------------------------------------------------\n\n"
-    PASSED = "Passed.\n\n"
-    FAILED = "Failed.\n\n"
 
+TEST_DESCRIPTION = "Test #14\nThis test case checks if college paragraph is correctly displayed.\n\n"
+DELIMITER = "-----------------------------------------------------\n\n"
+PASSED = "Passed.\n\n"
+FAILED = "Failed.\n\n"
+
+def test14(driver):
     part_college = driver.find_element(By.XPATH, "/html/body/div/nav/div/ul/li[5]/a")
     part_college.click()
     time.sleep(1)
