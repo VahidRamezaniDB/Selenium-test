@@ -1,18 +1,18 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
-def test11(driver):
-    TEST_DESCRIPTION = "Test #11\nThis test case checks if a picture is displayed.\n\n"
+def test15(driver):
+    TEST_DESCRIPTION = "Test #15\nThis test case checks if the title in cooperation is correctly displayed.\n\n"
     DELIMITER = "-----------------------------------------------------\n\n"
     PASSED = "Passed.\n\n"
     FAILED = "Failed.\n\n"
 
-    about_us = driver.find_element(By.XPATH, "/html/body/div/nav/div/ul/li[2]/a")
-    about_us.click()
+    cooperation = driver.find_element(By.XPATH, "/html/body/div/nav/div/ul/li[6]/a")
+    cooperation.click()
     time.sleep(1)
-    elem = driver.find_element(By.XPATH, "/html/body/div/main/div[2]/div/div/div/div/div[2]/figure[5]/img")
+    elem = driver.find_element(By.XPATH, "/html/body/div/main/div[6]/div[1]/div/div[1]/div/div/h2")
     try:
-        assert elem.is_displayed()
+        assert "همکاری با خانواده بزرگ پارت"==elem.text
         with open("OutLog.txt", 'at') as out_file:
             out_file.write(TEST_DESCRIPTION)
             out_file.write(PASSED)
